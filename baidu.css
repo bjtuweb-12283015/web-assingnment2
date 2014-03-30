@@ -1,0 +1,84 @@
+span{
+
+	display:inline;
+}
+
+
+.subtitlel{
+	color:blue;
+    text-decoration:underline;
+	padding-left:1000px;
+}
+
+.subtitlee{
+	color:blue;
+	text-decoration:underline;
+}
+.one
+{
+	font-size:10px;
+}
+
+.two{
+	text-align:center;
+}
+
+.three
+{
+	text-align:center;
+
+}
+
+.footer {
+  font-size:10px;
+  margin-top: 0px;
+  text-align: center;
+  color: grey;
+}
+
+a:hover{
+background:green;
+}
+
+form{
+	padding :20px;
+	line-height:30px;
+	margin-left:380px;
+}
+
+.four{
+	padding-top:0px;
+	text-align:center;
+}
+
+.one {
+     margin-top: 0px;
+}
+
+.one p {
+     display: inline;
+}
+
+.one .subtitle {
+    margin-left: 20px;
+}
+
+.five{
+	font-size:10px;
+	text-align:center;
+	padding-top:200px;
+}
+
+
+.six{
+	font-size:10px;
+	text-align:center;
+	padding-top:0px;
+}
+
+.five.a{
+	display:inline;
+}
+
+
+

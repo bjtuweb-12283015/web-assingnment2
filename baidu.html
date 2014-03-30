@@ -1,0 +1,140 @@
+<html>
+    <meta charset="utf-8" />
+   <body>
+     <link href="baidu.css" rel="stylesheet"/>
+     <div class="one">
+       <p>空气质量8</p><span class="subtitle">重度污染</span><span class="subtitlel">搜索设置
+       <span class="bar">&#124</span></span><span class="subtitlee">注册
+       <span class="bar">&#124</span></span><span class="subtitlee">登陆</span>
+       <hr/> 
+     </div>
+  
+     <div class="two">
+     <img src="bdlogo.gif">
+     </div>
+
+      <div class="three">
+      <a href ="http://bjtu.edu.cn">新闻</a>
+      <a href ="http://bjtu.edu.cn">网页</a>
+      <a href ="http://bjtu.edu.cn">贴吧</a>
+      <a href ="http://bjtu.edu.cn">图片</a>
+      <a href ="http://bjtu.edu.cn">知道</a>
+      <a href ="http://bjtu.edu.cn">音乐</a>
+      <a href ="http://bjtu.edu.cn">频道</a>
+      <a href ="http://bjtu.edu.cn">视频</a>
+      <a href ="http://bjtu.edu.cn">文库</a>
+      <a href ="http://bjtu.edu.cn">更多</a> 
+     
+     </div>
+
+
+     <form>
+     <input type="text" name="search" size='70' padding-left='80'/>
+     <input type="button" value=" 百度一下 ">
+     <br />
+     </form>>
+    
+    <div class="four">
+     <a href ="http://bjtu.edu.cn">百科</a>
+     <a href ="http://bjtu.edu.cn">文库</a>
+     <a href ="http://bjtu.edu.cn">hao123</a>
+     <a href ="http://bjtu.edu.cn">更多&#124&#60&#60</a>      
+    </div>>
+     
+
+     <div class="five">
+      <a href ="http://bjtu.edu.cn">把百度设为首页</a>
+      <a href ="http://bjtu.edu.cn">安装百度卫士</a>
+     </div>>
+
+       <div class="six">
+      <a href ="http://bjtu.edu.cn">加入百度推广</a><span class="bar">&#124</span>
+      <a href ="http://bjtu.edu.cn">搜索风云榜</a><span class="bar">&#124</span>   
+      <a href ="http://bjtu.edu.cn">关于百度</a><span class="bar">&#124</span>
+      <a href ="http://bjtu.edu.cn">安装百度卫士</a>
+     </div>
+
+
+     <div class="footer">
+     <hr/>
+     &copy; 2014 Baidu 使用百度前必读 京ICP证030173号
+     </div>
+
+
+<Script language="javascript">
+<!--
+window.onload = getMsg;
+window.onresize = resizeDiv;
+window.onerror = function(){}
+var divTop,divLeft,divWidth,divHeight,docHeight,docWidth,objTimer,i = 0;
+function getMsg()
+{
+try{
+divTop = parseInt(document.getElementById("eMeng").style.top,10)
+divLeft = parseInt(document.getElementById("eMeng").style.left,10)
+divHeight = parseInt(document.getElementById("eMeng").offsetHeight,10)
+divWidth = parseInt(document.getElementById("eMeng").offsetWidth,10)
+docWidth = document.documentElement.clientWidth;
+docHeight = document.documentElement.clientHeight;
+document.getElementById("eMeng").style.top = parseInt(document.documentElement.scrollTop,10) + docHeight + 10;// divHeight
+document.getElementById("eMeng").style.left = parseInt(document.documentElement.scrollLeft,10) + docWidth - divWidth
+document.getElementById("eMeng").style.visibility="visible"
+objTimer = window.setInterval("moveDiv()",10)
+}
+catch(e){}
+}
+
+function resizeDiv()
+{
+
+try{
+divHeight = parseInt(document.getElementById("eMeng").offsetHeight,10)
+divWidth = parseInt(document.getElementById("eMeng").offsetWidth,10)
+docWidth = document.documentElement.clientWidth;
+docHeight = document.documentElement.clientHeight;
+document.getElementById("eMeng").style.top = docHeight - divHeight + parseInt(document.documentElement.scrollTop,10);
+document.getElementById("eMeng").style.left = docWidth - divWidth + parseInt(document.documentElement.scrollLeft,10)
+}
+catch(e){}
+}
+
+function moveDiv()
+{
+try
+{
+if(parseInt(document.getElementById("eMeng").style.top,10) <= (docHeight - divHeight + parseInt(document.documentElement.scrollTop,10)))
+{
+window.clearInterval(objTimer)
+objTimer = window.setInterval("resizeDiv()",1)
+}
+divTop = parseInt(document.getElementById("eMeng").style.top,10)
+document.getElementById("eMeng").style.top = divTop - 1
+}
+catch(e){}
+}
+function closeDiv()
+{
+document.getElementById('eMeng').innerHTML='';
+document.getElementById('eMeng').style.visibility='hidden';
+if(objTimer) window.clearInterval(objTimer)
+}
+-->
+</Script>
+
+<div id=eMeng style="border-right: #455690 1px solid; border-top: #a6b4cf 1px solid; Z-INDEX:99999; left: 0px; VISIBILITY: hidden; 
+    border-left: #a6b4cf 1px solid; WIDTH: 260px; BORDER-BOTTOM: #455690 1px solid; position: absolute; top: 0px; height: 198px; ">
+<table style="BORDER-TOP: #ffffff 1px solid; border-left: #ffffff 1px solid" cellSpacing=0 cellPadding=0 width="100%" bgColor=#AFDCF3 border=0>
+<tbody>
+<tr>
+<td style="background-image: url('tupian.jpg'); padding-right: 1px; padding-bottom: 1px; width:254px; height:194px;" colSpan=2></TD>
+<td  width="25" valign=middle  align="center" style="font-weight: normal; font-size: 12px; 
+        width:25px;color: #ffffff; padding-left: 2px; padding-top: 10px ;background-color:#FB6413;">
+        <span style="layout-flow:vertical-ideographic;font-weight:bold;" >点此关闭弹窗<br/></span>
+        <span title=关闭 style="CURSOR: hand;color:white;font-size:14px;font-weight:bolder;margin-right:1px;" onclick=closeDiv() >X</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</body>
+</html >
